@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 
 export default function Projects() {
   return (
-    <Container style={{ marginBottom: 30 }}>
-      <Row style={{ marginBottom: 50, marginTop: 20 }}>
+    <Container>
+      <Row style={{ marginBottom: "2%", marginTop: "2%" }}>
         <h3 className={fonts.poppinssemibold}>what have i work on?</h3>
       </Row>
       <motion.div animate={{ x: 0 }} transition={{ delay: 0 }}>
@@ -85,7 +85,7 @@ export default function Projects() {
             language={projects.TTCWEB.language}
           />
         </Row>
-        <Row style={{ marginTop: "3%" }}>
+        <Row style={{ marginTop: "3%", marginBottom: "3%" }}>
           <ProjectCard
             header={projects.PORTFOLIO.header}
             description={projects.PORTFOLIO.description}

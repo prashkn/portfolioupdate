@@ -9,8 +9,8 @@ import resume from "../assets/resume.png";
 
 export default function Contact() {
   return (
-    <Container style={{ marginBottom: 30 }}>
-      <Row style={{ marginBottom: 50, marginTop: 20 }}>
+    <Container>
+      <Row style={{ marginBottom: "2%", marginTop: "2%" }}>
         <h3 className={fonts.poppinssemibold}>connect with me.</h3>
       </Row>
       <motion.div
