@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <Container>
       <Row style={{ marginBottom: "2%", marginTop: "2%" }}>
-        <h3 className={fonts.poppinssemibold}>what have i work on?</h3>
+        <h3 className={fonts.poppinssemibold}>what have i worked on?</h3>
       </Row>
       <motion.div animate={{ x: 0 }} transition={{ delay: 0 }}>
         <Row>
