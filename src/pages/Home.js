@@ -14,15 +14,21 @@ export default function Home() {
       <Row>
         <Col>
           <h1 className={fonts.poppinssemibold} style={{ fontSize: "2rem" }}>
-            cs @ illinois | swe intern @ metlife
+            cs @ illinois | interned @ metlife, capital one, abbvie, cisco
           </h1>
         </Col>
       </Row>
       <Row>
-        <Col md={6}>
+        <Col md={9}>
           <h3 className={fonts.poppinsregular} style={{ fontSize: "1.25rem" }}>
             a junior studying cs at the university of illinois, interested in
             creating consumer products.
+          </h3>
+          <h3 className={fonts.poppinsregular} style={{ fontSize: "1.25rem" }}>
+            proficient in{" "}
+            <span className={fonts.poppinssemibold}>
+              java, javascript, python, c++, react.
+            </span>
           </h3>
         </Col>
       </Row>
