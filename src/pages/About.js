@@ -29,7 +29,7 @@ export default function About() {
           <Col sm={12} lg={4} className={fonts.poppinssemibold}>
             hello!! i'm{" "}
             <span style={{ color: "#AC5AFE" }}>
-              prashant, a 19 year old from cary, north carolina.
+              prashant, a 20 year old from cary, north carolina.
             </span>{" "}
             i currently attend university in illinois.{" "}
             <span style={{ color: "#AC5AFE" }}>
