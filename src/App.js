@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "./Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
@@ -9,10 +10,15 @@ import CapitalOne from "./pages/CapitalOne";
 import AbbVie from "./pages/AbbVie";
 import UIUC from "./pages/UIUC";
 import Cisco from "./pages/Cisco";
+import MetLife from "./pages/MetLife";
 import TheCodingSchool from "./pages/TheCodingSchool";
 import Stanford from "./pages/Stanford";
+import TagManager from "react-gtm-module";
 
 function App() {
+  React.useEffect(() => {
+    TagManager.initialize({ gtmId: "GTM-XXXXX" });
+  }, []);
   return (
     <>
       <Navbar />
@@ -29,6 +35,7 @@ function App() {
           <Route path="/work/cisco" element={<Cisco />} />
           <Route path="/work/thecodingschool" element={<TheCodingSchool />} />
           <Route path="/work/stanford" element={<Stanford />} />
+          <Route path="/work/metlife" element={<MetLife />} />
         </Routes>
       </div>
     </>
