@@ -4,11 +4,28 @@
 
 html {
   overflow-y: scroll;
+  background: linear-gradient(-45deg, #ffb098, #fffbbe, #94e3ff, #8affe4);
+  background-size: 1000% 1000%;
+  animation: gradient 15s ease infinite;
 }
 
 body {
   margin: 0;
-  background-color: white;
+  background: linear-gradient(-45deg, #ffb098, #fffbbe, #94e3ff, #8affe4);
+  background-size: 1000% 1000%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .navbar-title {

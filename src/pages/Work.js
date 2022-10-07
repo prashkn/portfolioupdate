@@ -8,6 +8,7 @@ import founders from "../assets/founders.png";
 import abbvie from "../assets/abbvie.png";
 import tcs from "../assets/tcs.png";
 import ttc from "../assets/ttc.jpeg";
+import metlife from "../assets/metlife.jpeg";
 import fonts from "../fonts.module.css";
 import { Link } from "react-router-dom";
 
@@ -18,6 +19,20 @@ export default function Work() {
         <h3 className={fonts.poppinssemibold}>work.</h3>
       </Row>
       <Row>
+        <Col sm={12} md={6}>
+          <Link
+            to="/work/metlife"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <JobCard
+              company={workInfo.METLIFE.company}
+              jobTitle={workInfo.METLIFE.jobTitle}
+              date={workInfo.METLIFE.date}
+              description={workInfo.METLIFE.description}
+              imgsrc={metlife}
+            />
+          </Link>
+        </Col>
         <Col sm={12} md={6}>
           <Link
             to="/work/capitalone"
@@ -32,6 +47,8 @@ export default function Work() {
             />
           </Link>
         </Col>
+      </Row>
+      <Row>
         <Col sm={12} md={6}>
           <Link
             to="/work/uiuc"
@@ -46,8 +63,6 @@ export default function Work() {
             />
           </Link>
         </Col>
-      </Row>
-      <Row>
         <Col sm={12} md={6}>
           <Link
             to="/work/abbvie"
@@ -62,6 +77,8 @@ export default function Work() {
             />
           </Link>
         </Col>
+      </Row>
+      <Row>
         <Col sm={12} md={6}>
           <Link
             to="/work/cisco"
@@ -76,8 +93,6 @@ export default function Work() {
             />
           </Link>
         </Col>
-      </Row>
-      <Row>
         <Col sm={12} md={6}>
           <Link
             to="/work/thecodingschool"
@@ -92,6 +107,8 @@ export default function Work() {
             />
           </Link>
         </Col>
+      </Row>
+      <Row>
         <Col sm={12} md={6}>
           <Link
             to="/work/stanford"
@@ -106,6 +123,7 @@ export default function Work() {
             />
           </Link>
         </Col>
+        <Col sm={12} md={6}></Col>
       </Row>
 
       <Row style={{ marginBottom: 35, marginTop: 20 }}>
@@ -136,6 +154,13 @@ export default function Work() {
 }
 
 const workInfo = {
+  METLIFE: {
+    company: "MetLife",
+    jobTitle: "Software Engineer Intern",
+    date: "May 2022 - September 2022",
+    description:
+      "Implemented APIs using SQL, Java, Spring Boot; these APIs would return information on the status of features, information on APIs pings over a certain time frame, and information about files processed in a certain time frame. Utilized React, HTML/CSS, and Javascript to dynamically display widgets, graphs, and tables from data pulled from pinging the created APIs.",
+  },
   SWECAPITALONE: {
     company: "Capital One",
     jobTitle: "Software Engineer Intern",

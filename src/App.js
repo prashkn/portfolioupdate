@@ -13,14 +13,11 @@ import Cisco from "./pages/Cisco";
 import MetLife from "./pages/MetLife";
 import TheCodingSchool from "./pages/TheCodingSchool";
 import Stanford from "./pages/Stanford";
-import TagManager from "react-gtm-module";
+import "../src/styles.css";
 
 function App() {
-  React.useEffect(() => {
-    TagManager.initialize({ gtmId: "GTM-XXXXX" });
-  }, []);
   return (
-    <>
+    <div className="App">
       <Navbar />
       <div className="container">
         <Routes>
@@ -38,7 +35,7 @@ function App() {
           <Route path="/work/metlife" element={<MetLife />} />
         </Routes>
       </div>
-    </>
+    </div>
   );
 }
 
