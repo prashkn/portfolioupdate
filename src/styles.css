@@ -4,16 +4,16 @@
 
 html {
   overflow-y: scroll;
-  background: linear-gradient(-45deg, #ffb098, #fffbbe, #94e3ff, #8affe4);
-  background-size: 1000% 1000%;
-  animation: gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #fffbbe, #ffb098, #94e3ff, #8affa5);
+  background-size: 500% 500%;
+  animation: gradient 7s ease infinite;
 }
 
 body {
   margin: 0;
-  background: linear-gradient(-45deg, #ffb098, #fffbbe, #94e3ff, #8affe4);
-  background-size: 1000% 1000%;
-  animation: gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #fffbbe, #ffb098, #94e3ff, #8affa5);
+  background-size: 500% 500%;
+  animation: gradient 7s ease infinite;
 }
 
 @keyframes gradient {
